@@ -5,3 +5,6 @@ variable "gcp_vpc_name" {
 variable "gcp_vpc_description"{
     default = "GCP VPC Network"
 }
+
+variable "gcp_project" {}
+variable "gcp_region" {}
