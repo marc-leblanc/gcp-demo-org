@@ -1,0 +1,7 @@
+module "vpc" {
+  source  = "app.terraform.io/leblanchq/vpc/gcp"
+  version = "1.0.0"
+  # insert required variables here
+  gcp_vpc_name = var.corp_vpc_name
+  gcp_vpc_description = var.corp_vpc_description
+}
