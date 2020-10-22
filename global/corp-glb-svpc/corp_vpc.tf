@@ -5,3 +5,7 @@ module "vpc" {
   gcp_vpc_name = var.corp_vpc_name
   gcp_vpc_description = var.corp_vpc_description
 }
+
+output "vpc_name" { 
+    value = module.vpc.VPC_Name
+}
