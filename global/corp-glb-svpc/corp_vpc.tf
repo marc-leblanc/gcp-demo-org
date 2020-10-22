@@ -4,7 +4,7 @@ module "vpc" {
   # insert required variables here
   gcp_vpc_name = var.corp_vpc_name
   gcp_vpc_description = var.corp_vpc_description
-  project = var.gcp_project
+  gcp_project = var.gcp_project
 }
 
 output "vpc_name" { 
