@@ -2,7 +2,7 @@ variable "gcp_project" {
 
 }
 variable "gcp_region" {
-    default = "northamerica-northeast1-a"
+    default = "northamerica-northeast1"
 }
 
 variable "snet_name"{
