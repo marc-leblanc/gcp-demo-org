@@ -1,6 +1,6 @@
 module "compute-instance" {
   source  = "app.terraform.io/leblanchq/compute-instance/google"
-  version = "1.0.7"
+  version = "1.0.8"
   svpc_project_name = var.gcp_project
   subnet = data.terraform_remote_state.lhq_ca_network.outputs.ca_subnet_01["name"]
   node_count = 1
