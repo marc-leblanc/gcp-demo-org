@@ -4,3 +4,7 @@ resource "google_compute_subnetwork" "ca_subnet_01" {
   ip_cidr_range = var.ip_cidr_range
   network = data.terraform_remote_state.corp_vpc.outputs.vpc_name
 }
+
+output "ca_subnet_01" { 
+  value = google_compute_subnetwork.ca_subnet_01
+}
