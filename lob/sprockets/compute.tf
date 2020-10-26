@@ -7,4 +7,5 @@ module "compute-instance" {
   data_disk_count = 1 
   host_prefix = "lhq-sprockets-"
   labels = { "lob"="sprockets", "country"="ca"}
+  tags = "http"
 }
