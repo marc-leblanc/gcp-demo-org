@@ -5,6 +5,6 @@ module "compute-instance" {
   subnet = data.terraform_remote_state.lhq_ca_network.outputs.ca_subnet_01["name"]
   node_count = 1
   data_disk_count = 1 
-  host_prefix = "lhq-sprockets_"
+  host_prefix = "lhq-sprockets-"
   labels = { "lob"="sprockets", "country"="ca"}
 }
