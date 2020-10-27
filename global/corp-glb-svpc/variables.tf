@@ -6,5 +6,4 @@ variable "corp_vpc_description"{
     default = "GCP VPC Network"
 }
 
-variable "gcp_project" {}
-variable "gcp_region" {}
+variable "env" {}
