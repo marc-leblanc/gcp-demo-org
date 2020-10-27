@@ -23,3 +23,7 @@ resource "google_project_iam_binding" "project_iam" {
     "serviceAccount:${var.service_account}"
   ]
 }
+
+output "gcp_project_id"{
+  value=google_project.lhq_project_cp1.project_id
+}
