@@ -14,3 +14,12 @@ resource "google_project_service" "project_apis" {
 
   disable_dependent_services = true
 }
+
+resource "google_project_iam_binding" "project_iam" {
+  project = google_project.lhq_project_cp1.project_id
+  role    = "roles/compute.admin"
+
+  members = [
+    "user:${var.service_account}"
+  ]
+}
