@@ -6,3 +6,5 @@ variable "snet_name"{
     
 }
 variable "ip_cidr_range" {}
+
+variable "env" {}
