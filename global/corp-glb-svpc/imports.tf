@@ -1,4 +1,4 @@
-data "terraform_remote_state" "lhq_project_control" {
+data "terraform_remote_state" "project_control" {
   backend = "remote"
   config = {
     organization = "leblanchq"
