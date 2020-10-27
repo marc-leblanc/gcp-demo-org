@@ -1,5 +1,5 @@
 variable "gcp_region" {
-    default = "us-central1-a"
+    default = "us-central1"
 }
 
 variable "snet_name"{
