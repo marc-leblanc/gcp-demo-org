@@ -1,4 +1,3 @@
 provider "google"{
-    project = var.gcp_project
-    region = var.gcp_region
+    gcp_project = data.terraform_remote_state.project_control.outputs.gcp_project_id
 }
