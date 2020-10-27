@@ -8,4 +8,5 @@ module "compute-instance" {
   host_prefix = "lhq-sprockets-${var.env}-"
   labels = { "lob"="sprockets", "country"="ca", "env"=var.env}
   tags = "http"
+  node_type = "f1-micro"
 }
