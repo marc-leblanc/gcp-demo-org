@@ -9,4 +9,5 @@ module "compute-instance" {
   labels = { "lob"="sprockets", "country"="ca", "env"=var.env}
   tags = "http"
   node_type = "f1-micro"
+  zone = "us-central1-a"
 }
