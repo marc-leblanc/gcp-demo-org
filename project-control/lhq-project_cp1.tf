@@ -1,6 +1,6 @@
 resource "google_project" "lhq_project_cp1" {
   name       = var.gcp_project_name
-  project_id = "${var.gcp_projectname}-id"
+  project_id = "${var.gcp_project_name}-id"
   folder_id  = var.gcp_folder_id
 
   auto_create_network = false
