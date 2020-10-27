@@ -1,1 +1,1 @@
-variable "gcp_project"{}
+variable "env" {}
