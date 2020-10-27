@@ -5,3 +5,5 @@ variable "corp_vpc_name" {
 variable "corp_vpc_description"{
     default = "GCP VPC Network"
 }
+
+variable "env" {}
