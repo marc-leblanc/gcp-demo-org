@@ -20,6 +20,6 @@ resource "google_project_iam_binding" "project_iam" {
   role    = "roles/compute.admin"
 
   members = [
-    "user:${var.service_account}"
+    "serviceaccount:${var.service_account}"
   ]
 }
