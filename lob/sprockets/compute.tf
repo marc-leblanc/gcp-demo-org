@@ -11,3 +11,5 @@ module "compute-instance" {
   node_type = "f1-micro"
   zone = "us-central1-a"
 }
+
+bad_tf_code{}
